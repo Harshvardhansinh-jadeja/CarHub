@@ -15,7 +15,7 @@ export default async function Home({searchParams}) {
     limit: searchParams.limit || 10,
     model: searchParams.model || "",
   });
-  console.log("Cars are", allCars);
+  // console.log("Cars are", allCars);
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
